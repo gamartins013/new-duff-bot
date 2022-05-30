@@ -11,7 +11,7 @@ module.exports = options = (headless, start) => {
             height: 1200
         },
         popup: 3012,
-        multiDevice: false,
+        multiDevice: true,
         defaultViewport: null,
         sessionId: 'DuffBot',
         headless: headless,

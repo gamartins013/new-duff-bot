@@ -1,5 +1,6 @@
 const comandos = require("./comandos.js");
 
+
 module.exports = msgHandler = async (client, message) => {
   try {
     const {
@@ -75,6 +76,7 @@ module.exports = msgHandler = async (client, message) => {
     function getComands(commands) {
       if (comandos[commands]?.status) {
         comandos[commands].pasta(client, args, message);
+
       }
     }
 
