@@ -10,6 +10,7 @@ module.exports = msgHandler = async (client, message) => {
       sender,
       isGroupMsg,
       chat,
+      chatId,
       caption,
       isMedia,
       mimetype,
@@ -82,6 +83,7 @@ module.exports = msgHandler = async (client, message) => {
 
     if (command) {
       getComands(command);
+      
     }
   } catch (err) {
     await client.sendText(`Puts, deu merda... Erro: ${err}`);

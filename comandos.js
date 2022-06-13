@@ -5,6 +5,8 @@ const clima = require('./modulos/clima/index.js')
 const sticker = require('./modulos/sticker/index.js')
 const audioSextou = require ('./modulos/audios/index.js')
 const atividades = require ('./modulos/atividades/index.js')
+const consultaCnpj = require ('./modulos/consulta-cnpj/index.js')
+
 
 const comandos = {
     '!cep': {
@@ -33,6 +35,10 @@ const comandos = {
     },
     '!atividades': {
         'pasta': atividades,
+        'status': true
+    },
+    '!cnpj':{
+        'pasta': consultaCnpj,
         'status': true
     }
 }
